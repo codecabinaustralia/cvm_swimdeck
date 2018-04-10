@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trigger model:</strong>
+  <%= @automation.trigger_model %>
+</p>
+
+<p>
+  <strong>Trigger crud:</strong>
+  <%= @automation.trigger_crud %>
+</p>
+
+<p>
+  <strong>Trigger math:</strong>
+  <%= @automation.trigger_math %>
+</p>
+
+<p>
+  <strong>Rule integer:</strong>
+  <%= @automation.rule_integer %>
+</p>
+
+<p>
+  <strong>Rule value:</strong>
+  <%= @automation.rule_value %>
+</p>
+
+<p>
+  <strong>Action model:</strong>
+  <%= @automation.action_model %>
+</p>
+
+<p>
+  <strong>Action crud:</strong>
+  <%= @automation.action_crud %>
+</p>
+
+<p>
+  <strong>Action table:</strong>
+  <%= @automation.action_table %>
+</p>
+
+<p>
+  <strong>Action value:</strong>
+  <%= @automation.action_value %>
+</p>
+
+<%= link_to 'Edit', edit_automation_path(@automation) %> |
+<%= link_to 'Back', automations_path %>

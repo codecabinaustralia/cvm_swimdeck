@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  notes: MyText
+  user: one
+  student: one
+  client: one
+  automation: one
+
+two:
+  title: MyString
+  notes: MyText
+  user: two
+  student: two
+  client: two
+  automation: two

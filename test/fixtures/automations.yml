@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trigger_model: MyString
+  trigger_crud: MyString
+  trigger_math: MyString
+  rule_integer: 1
+  rule_value: MyString
+  action_model: MyString
+  action_crud: MyString
+  action_table: MyString
+  action_value: MyString
+
+two:
+  trigger_model: MyString
+  trigger_crud: MyString
+  trigger_math: MyString
+  rule_integer: 1
+  rule_value: MyString
+  action_model: MyString
+  action_crud: MyString
+  action_table: MyString
+  action_value: MyString

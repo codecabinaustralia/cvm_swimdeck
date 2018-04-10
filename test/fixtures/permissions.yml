@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  role: one
+  model_name: MyString
+  perm_create: MyString
+  perm_read: MyString
+  perm_update: MyString
+  perm_destroy: MyString
+
+two:
+  role: two
+  model_name: MyString
+  perm_create: MyString
+  perm_read: MyString
+  perm_update: MyString
+  perm_destroy: MyString

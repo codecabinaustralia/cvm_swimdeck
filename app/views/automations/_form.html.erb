@@ -1,0 +1,62 @@
+<%= form_with(model: automation, local: true) do |form| %>
+  <% if automation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(automation.errors.count, "error") %> prohibited this automation from being saved:</h2>
+
+      <ul>
+      <% automation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :trigger_model %>
+    <%= form.text_field :trigger_model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trigger_crud %>
+    <%= form.text_field :trigger_crud %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trigger_math %>
+    <%= form.text_field :trigger_math %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rule_integer %>
+    <%= form.number_field :rule_integer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rule_value %>
+    <%= form.text_field :rule_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_model %>
+    <%= form.text_field :action_model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_crud %>
+    <%= form.text_field :action_crud %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_table %>
+    <%= form.text_field :action_table %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_value %>
+    <%= form.text_field :action_value %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

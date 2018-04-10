@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Automations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trigger model</th>
+      <th>Trigger crud</th>
+      <th>Trigger math</th>
+      <th>Rule integer</th>
+      <th>Rule value</th>
+      <th>Action model</th>
+      <th>Action crud</th>
+      <th>Action table</th>
+      <th>Action value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @automations.each do |automation| %>
+      <tr>
+        <td><%= automation.trigger_model %></td>
+        <td><%= automation.trigger_crud %></td>
+        <td><%= automation.trigger_math %></td>
+        <td><%= automation.rule_integer %></td>
+        <td><%= automation.rule_value %></td>
+        <td><%= automation.action_model %></td>
+        <td><%= automation.action_crud %></td>
+        <td><%= automation.action_table %></td>
+        <td><%= automation.action_value %></td>
+        <td><%= link_to 'Show', automation %></td>
+        <td><%= link_to 'Edit', edit_automation_path(automation) %></td>
+        <td><%= link_to 'Destroy', automation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Automation', new_automation_path %>
